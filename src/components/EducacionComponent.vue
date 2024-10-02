@@ -1,16 +1,17 @@
 <script setup>
 import { ref } from 'vue';
 const fechaColor = ref([
-  {color: '#41516c'},
-  {color: '#FBCA3E'},
-  {color: '#E24A68'},
-  {color: '#1B5F8C'},
-  {color: '#4CADAD'}
+  { color: '#E24A68' }, // Rosa fuerte
+  { color: '#D1235C' }, // Rosa intenso
+  { color: '#FF5A8A' }, // Rosa vibrante
+  { color: '#C2185B' }, // Rosa oscuro intenso
+  { color: '#FF3366' }  // Rosa neón
 ]);
+
 
 const educacion = ref([
   {fecha: '2024/2025', title: 'Técnicatura Universitaria en Programación', descripcion: 'Incumbencias Profesionales: Operación y programación de computadoras, desarrollo de programas en distintos lenguajes, análisis y control de sistemas informáticos.', enlace:'https://www.youtube.com/'},
-  {fecha: '202/2023', title: 'Desarrollador Full Stack', descripcion: 'Trabajé en XYZ Tech, donde diseñé y desarrollé aplicaciones web completas utilizando tecnologías como Node.js, React y MongoDB.', enlace:'http://www.direccion.com'}
+  {fecha: '2022/2023', title: 'Desarrollador Full Stack', descripcion: 'Competencias profesionales: Desarrollo de aplicaciones web y móviles utilizando Java para el backend, HTML, CSS, JavaScript y React para el frontend, junto con gestores de bases de datos como MySQL. Además, manejo de Spring Boot y Spring Security en Java para la implementación de sistemas seguros y eficientes.', enlace:'http://www.direccion.com'}
 ]);
 </script>
 
