@@ -57,5 +57,9 @@ const experiencias = ref([
     border-radius: 10px;
     color: #d1235c; /* Texto en rosa intenso */
 }
+
+h3{
+    font-weight: bold;
+}
 </style>
 

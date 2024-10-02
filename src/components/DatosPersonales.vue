@@ -10,11 +10,13 @@ const redesSociales = [
     { id: 4, name: 'curriculum', src: '/src/components/icons/cv_resume_icon.svg', url: 'https://drive.google.com/file/d/1YqIJfujoJUCaJOq8asoWjFC0_2eZvJUS/view?usp=sharing' },
 ];
 const telefono = '+54 9 2615522560';
+const photoUrl = '/src/components/icons/danna.png'; 
 </script>
 
 <template>
     <section class="datos-personales">
         <div class="card">
+            <img :src="photoUrl" alt="Foto de Rosario Danna Martinez Baez" class="foto" />
             <h1>{{ title }}</h1>
             <h2>{{ descripcion }}</h2>
             <p>{{ presentacion }}</p>
@@ -65,6 +67,13 @@ p {
 
 .card:hover {
     transform: translateY(-10px); /* Efecto de elevación */
+}
+
+.foto {
+    width: 250px; /* Ajusta el tamaño según tus preferencias */
+    height: 250px; /* Mantiene la proporción de la imagen */
+    border-radius: 50%; /* Bordes redondeados para una imagen circular */
+    margin-bottom: 1rem; /* Espacio debajo de la imagen */
 }
 
 .container-lista {
