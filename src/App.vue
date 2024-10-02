@@ -1,15 +1,20 @@
 <script setup>
-import NavBar from './components/icons/NavBar.vue';
+import NavBar from './components/NavBar.vue';
+import DatosPersonales from './components/DatosPersonales.vue';
+import EducacionComponent from './components/EducacionComponent.vue';
 </script>
 
 <template>
   <header>
     <!-- Barra de navegacion-->
     <NavBar/>
+    <!-- Datos Personales -->
+     <DatosPersonales/>
   </header>
   <main>
     <section id="educacion">
       <h2>Educacion - Cursos</h2>
+      <EducacionComponent/>
     </section>
     <section id="experiencia">
       <h2>Experiencia</h2>
