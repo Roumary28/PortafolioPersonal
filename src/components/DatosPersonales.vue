@@ -4,13 +4,13 @@ const descripcion = 'Técnica Universitaria en Programación - UTN FRSR';
 const residencia = 'Ciudad de Mendoza, Mendoza, Argentina';
 const presentacion = '¡Hola! Bienvenido a mi portafolio de proyectos. Soy una desarrolladora web con experiencia en el desarrollo de aplicaciones web y móviles.';
 const redesSociales = [
-    { id: 1, name: 'linkedin', src: '/src/components/icons/linkedin_icon.svg', url: 'https://www.linkedin.com/in/rosariodannamartinez/' },
-    { id: 2, name: 'Instagram', src: '/src/components/icons/instagram_icon.svg', url: 'https://www.instagram.com/dannamartinezbaez/' },
-    { id: 3, name: 'github', src: '/src/components/icons/github_icon.svg', url: 'https://github.com/Roumary28' },
-    { id: 4, name: 'curriculum', src: '/src/components/icons/cv_resume_icon.svg', url: 'https://drive.google.com/file/d/1YqIJfujoJUCaJOq8asoWjFC0_2eZvJUS/view?usp=sharing' },
+    { id: 1, name: 'linkedin', src: '/src/assets/linkedin_icon.svg', url: 'https://www.linkedin.com/in/rosariodannamartinez/' },
+    { id: 2, name: 'Instagram', src: '/src/assets/instagram_icon.svg', url: 'https://www.instagram.com/dannamartinezbaez/' },
+    { id: 3, name: 'github', src: '/src/assets/github_icon.svg', url: 'https://github.com/Roumary28' },
+    { id: 4, name: 'curriculum', src: '/src/assets/cv_resume_icon.svg', url: 'https://drive.google.com/file/d/1YqIJfujoJUCaJOq8asoWjFC0_2eZvJUS/view?usp=sharing' },
 ];
 const telefono = '+54 9 2615522560';
-const photoUrl = '/src/components/icons/danna.png'; 
+const photoUrl = '/src/assets/danna.png'; 
 </script>
 
 <template>
