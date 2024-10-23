@@ -1,87 +1,111 @@
 <script setup>
 import { ref } from 'vue';
 
-var habilidades = ref([]);
-habilidades.value = ([
-
+var habilidades = ref([
+    {
+        categoria: "Lenguaje de Programacion",
+        skills: [
+            {
+                nombre: "JavaScript",
+                nivel: "Intermedio",
+                icono: "/src/components/icons/javascript.svg"
+            },
+            {
+                nombre: "Python",
+                nivel: "Intermedio",
+                icono: "/src/components/icons/python.svg" // Corrección aquí
+            },
+            {
+                nombre: "HTML",
+                nivel: "Intermedio",
+                icono: "/src/components/icons/html.svg"
+            },
+            {
+                nombre: "CSS",
+                nivel: "Intermedio",
+                icono: "/src/components/icons/css.svg"
+            },
+            {
+                nombre: "SQL",
+                nivel: "Intermedio",
+                icono: "/src/components/icons/sql.svg"
+            },
+            {
+                nombre: "Java",
+                nivel: "Intermedio",
+                icono: "/src/components/icons/java.svg"
+            }
+        ]
+    },
+    {
+        categoria: "Frameworks y Librerias",
+        skills: [
+            {
+                nombre: "React",
+                nivel: "Intermedio",
+                icono: "/src/components/icons/react.svg"
+            },
+            {
+                nombre: "Vue",
+                nivel: "Intermedio",
+                icono: "/src/components/icons/vue.svg"
+            },
+            {
+                nombre: "Bootstrap", 
+                nivel: "Intermedio",
+                icono: "/src/components/icons/bootstrap.svg"
+            },
+            {
+                nombre: "Spring Boot",
+                nivel: "Intermedio",
+                icono: "/src/components/icons/spring.svg"
+            }
+        ]
+    },
+    {
+        categoria: "Herramientas y Software",
+        skills: [
+            {
+                nombre: "Git",
+                nivel: "Avanzado",
+                icono: "/src/components/icons/git.svg"
+            },
+            {
+                nombre: "Visual Studio Code",
+                nivel: "Avanzado",
+                icono: "/src/components/icons/vsc.svg"
+            }
+        ]
+    },
+    {
+        categoria: "Idiomas",
+        skills: [
+            {
+                nombre: "Español",
+                nivel: "Nativo",
+                icono: "/src/components/icons/argentina.svg"
+            },
+            {
+                nombre: "Inglés",
+                nivel: "Intermedio",
+                icono: "/src/components/icons/eeuu.png"
+            }
+        ]
+    }
 ]);
+
+console.log('Habilidades Component Loaded');
+console.log(habilidades.value);
 </script>
 
 <template>
     <div class="skills-contenedor">
-        <div class="skills-categoria">
-            <h3>Lenguaje de Programación</h3>
+        <div v-for="categoria in habilidades" :key="categoria.categoria" class="skills-categoria">
+            <h3>{{ categoria.categoria }}</h3>
             <ul class="skills">
-                <li class="skill">
-                    <img src="/src/components/icons/javascript-svgrepo-com.svg" alt="JavaScript">
-                    <span>JavaScript: Avanzado</span>
-                </li>
-                <li class="skill">
-                    <img src="/src/components/icons/python-svgrepo-com.svg" alt="Python">
-                    <span>Python: Intermedio</span>
-                </li>
-                <li class="skill">
-                    <img src="/src/components/icons/html-5-svgrepo-com.svg" alt="Html">
-                    <span>HTML: Avanzado</span>
-                </li>
-                <li class="skill">
-                    <img src="/src/components/icons/css-3-svgrepo-com.svg" alt="Css">
-                    <span>CSS: Avanzado</span>
-                </li>
-                <li class="skill">
-                    <img src="/src/components/icons/sql.svg" alt="Sql">
-                    <span>SQL: Intermedio</span>
-                </li>
-                <li class="skill">
-                    <img src="/src/components/icons/java.svg" alt="Java">
-                    <span>Java: Intermedio</span>
-                </li>
-            </ul>
-        </div>
-        <div class="skills-categoria">
-            <h3>Frameworks y Librerias</h3>
-            <ul class="skills">
-                <li class="skill">
-                    <img src="/src/components/icons/react.svg" alt="React">
-                    <span>React: Intermedio</span>
-                </li>
-                <li class="skill">
-                    <img src="/src/components/icons/vue.svg" alt="Vue">
-                    <span>Vue: Intermedio</span>
-                </li>
-                <li class="skill">
-                    <img src="/src/components/icons/bootstrap.svg" alt="BootStrap">
-                    <span>Bootstrap: Intermedio</span>
-                </li>
-                <li class="skill">
-                    <img src="/src/components/icons/spring.svg" alt="SpringBoot">
-                    <span>Spring Boot: Intermedio</span>
-                </li>
-            </ul>
-        </div>
-        <div class="skills-categoria">
-            <h3>Herramientas y Software</h3>
-            <ul class="skills">
-                <li class="skill">
-                    <img src="/src/components/icons/git.svg" alt="Git">
-                    <span>Git: Avanzado</span>
-                </li>
-                <li class="skill">
-                    <img src="/src/components/icons/vsc.svg" alt="Visual Studio Code">
-                    <span>Visual Studio Code: Avanzado</span>
-                </li>
-            </ul>
-        </div>
-        <div class="skills-categoria">
-            <h3>Idiomas</h3>
-            <ul class="skills">
-                <li class="skill">
-                    <img src="/src/components/icons/argentina.svg" alt="Git">
-                    <span>Español: Nativo</span>
-                </li>
-                <li class="skill">
-                    <img src="/src/components/icons/eeuu.png" alt="Visual Studio Code">
-                    <span>Ingles: Intermedio</span>
+                <li v-for="skill in categoria.skills" :key="skill.nombre" class="skill">
+                    <img :src="skill.icono" :alt="skill.nombre">
+                    <span>{{ skill.nombre }}: {{ skill.nivel }}</span>
                 </li>
             </ul>
         </div>
@@ -89,66 +113,87 @@ habilidades.value = ([
 </template>
 
 <style scoped>
-.skills-contenedor{
+.skills-contenedor {
     padding: 2rem;
+    max-width: 1200px; /* Limitar el ancho para mejor visualización */
+    margin: 0 auto; /* Centrar el contenedor */
 }
 
-.skills-categoria{
-    margin-bottom: 20px;
+.skills-categoria {
+    margin-bottom: 30px; /* Mayor espacio entre categorías */
+    border-bottom: 1px solid #d1235c; /* Línea divisoria para separación visual */
+    padding-bottom: 20px; /* Espacio interno debajo del título */
 }
 
 .skills-categoria h3 {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     margin-bottom: 10px;
-    font-size: 1.5em;
-    color: #d1235c;
-    font-size: 1.5em;
+    font-size: 1.8em; /* Aumentar el tamaño del título */
+    color: #d1235c; /* Color del texto */
     font-weight: bold;
+    position: relative; /* Para usar un pseudo-elemento */
 }
 
-.skills{
+/* Línea decorativa debajo del título */
+
+
+.skills {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center; /* Centrar */
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px; /* Espacio entre los ítems */
 }
 
-.skill{
+.skill {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center; /* Usar align-items para centrar verticalmente */
     gap: 10px;
-    padding: 0.3em;
+    padding: 1em; /* Mayor espacio interno */
     border-radius: 8px;
-    box-shadow: 0px 4px 12px #f8c2c1;
-    flex: 1 1 200px;
-    max-width: 250px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+    background-color: #f8f8f8; /* Fondo claro para las habilidades */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Suavizar transiciones */
+    flex: 1 1 calc(25% - 20px); /* Espacio adaptable con margen */
+    max-width: 220px; /* Ancho máximo para cada habilidad */
 }
 
 .skill:hover {
-    background-color: #f8c2c1;
-    font-size: 1.3em;
-    transition: 2s ease;
+    background-color: #f1f1f1; /* Fondo más claro en hover */
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño */
 }
 
 .skill img {
-    width: 35px;
-    height: 35px;
+    width: 40px; /* Tamaño del icono */
+    height: 40px; /* Tamaño del icono */
 }
 
-.skill span{
-    font-size: 1em;
-    color: #333;
+.skill span {
+    font-size: 1.1em; /* Tamaño de texto ligeramente mayor */
+    color: #333; /* Color del texto */
+    font-weight: 500; /* Peso de fuente medio */
 }
 
+/* Responsividad */
 @media (max-width: 768px) {
     .skills-categoria h3 {
-        justify-content: center;
+        justify-content: center; /* Centrar el título en dispositivos más pequeños */
+    }
+
+    .skills {
+        justify-content: center; /* Centrar los elementos en móviles */
     }
 
     .skill {
-        justify-content: center;
+        flex: 1 1 calc(50% - 10px); /* Dos elementos por fila en móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    .skill {
+        flex: 1 1 100%; /* Un elemento por fila en pantallas muy pequeñas */
+        max-width: none; /* Sin límite de ancho */
     }
 }
 

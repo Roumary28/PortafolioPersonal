@@ -4,7 +4,7 @@ import DatosPersonales from './components/DatosPersonales.vue';
 import EducacionComponent from './components/EducacionComponent.vue';
 import ExperienciaComponent from './components/ExperienciaComponent.vue';
 import ProyectosComponent from './components/ProyectosComponent.vue';
-import HabilidadesComponent from './components/HabilidadesComponent.vue';
+import HabilidadesComponent from './components/HabilidadesComponent.vue'; 
 </script>
 
 <template>
