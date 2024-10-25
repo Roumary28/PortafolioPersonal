@@ -1,35 +1,21 @@
-# .
+# Mi Portafolio Web
 
-This template should help get you started developing with Vue 3 in Vite.
+Bienvenido a mi portafolio web. Aquí puedes explorar mis proyectos, habilidades y experiencia en el desarrollo de software. Este portafolio es una representación de mi trabajo y un reflejo de mi pasión por la programación.
 
-## Recommended IDE Setup
+## Descripción
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Este portafolio está diseñado para mostrar mis habilidades en desarrollo web y aplicaciones. Utilizo tecnologías modernas como JavaScript, React, Vue.js, y Spring Boot para construir soluciones eficientes y atractivas.
 
-## Customize configuration
+### Contenido
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- **Proyectos**: Una selección de proyectos en los que he trabajado, incluyendo descripciones, tecnologías utilizadas y enlaces a las demos.
+- **Habilidades**: Un resumen de mis habilidades técnicas, divididas en categorías como lenguajes de programación, frameworks, herramientas y más.
+- **Sobre mí**: Información personal que describe mi trayectoria, intereses y motivación en el mundo del desarrollo de software.
 
-## Project Setup
+## Tecnologías Utilizadas
 
-```sh
-npm install
-```
+- **Frontend**: HTML, CSS, JavaScript, React, Vue.js
+- **Backend**: Java, Spring Boot
+- **Base de Datos**: MySQL
+- **Control de Versiones**: Git
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
