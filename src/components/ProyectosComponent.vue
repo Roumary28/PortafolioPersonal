@@ -1,11 +1,13 @@
 <script setup>
+import ecommerce from '/src/assets/tienda.png';
+import inmobiliaria from '/src/assets/inmobiliaria.png';
 import { ref } from 'vue';
 
 var proyectos = ref([]);
 
 proyectos.value = ([
-    {nombre: 'Ecommerce', descripcion: 'Tienda de ropa online', link:'https://www.tienda.com', git:'https://github.com/Roumary28/tienda-app', imagen: '/src/assets/tienda.png'}, 
-    {nombre: 'Pagina Inmobiliaria' , descripcion: 'Página Web de inmobiliaria', link:'https://www.inmobiliaria.com', git:'https://github.com/Roumary28/appInmobiliaria', imagen: '/src/assets/inmobiliaria.png'}
+    {nombre: 'Ecommerce', descripcion: 'Tienda de ropa online', link:'https://www.tienda.com', git:'https://github.com/Roumary28/tienda-app', imagen: ecommerce}, 
+    {nombre: 'Pagina Inmobiliaria' , descripcion: 'Página Web de inmobiliaria', link:'https://www.inmobiliaria.com', git:'https://github.com/Roumary28/appInmobiliaria', imagen: inmobiliaria}
 ]);
 </script>
 

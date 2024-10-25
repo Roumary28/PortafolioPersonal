@@ -1,4 +1,18 @@
 <script setup>
+import python from "/src/components/icons/python.svg";
+import javascript from "/src/components/icons/javascript.svg";
+import html from "/src/components/icons/html.svg";
+import css from "/src/components/icons/css.svg";
+import sql from "/src/components/icons/sql.svg";
+import java from "/src/components/icons/java.svg";
+import react from "/src/components/icons/react.svg";
+import vue from "/src/components/icons/vue.svg";
+import bootstrap from "/src/components/icons/bootstrap.svg";
+import spring from "/src/components/icons/spring.svg";
+import git from "/src/components/icons/git.svg";
+import vs from "/src/components/icons/vsc.svg";
+import español from "/src/components/icons/argentina.svg";
+import ingles from "/src/components/icons/eeuu.png";
 import { ref } from 'vue';
 
 var habilidades = ref([
@@ -8,32 +22,32 @@ var habilidades = ref([
             {
                 nombre: "JavaScript",
                 nivel: "Intermedio",
-                icono: "/src/components/icons/javascript.svg"
+                icono: javascript
             },
             {
                 nombre: "Python",
                 nivel: "Intermedio",
-                icono: "/src/components/icons/python.svg" // Corrección aquí
+                icono: python 
             },
             {
                 nombre: "HTML",
                 nivel: "Intermedio",
-                icono: "/src/components/icons/html.svg"
+                icono: html
             },
             {
                 nombre: "CSS",
                 nivel: "Intermedio",
-                icono: "/src/components/icons/css.svg"
+                icono: css
             },
             {
                 nombre: "SQL",
                 nivel: "Intermedio",
-                icono: "/src/components/icons/sql.svg"
+                icono: sql
             },
             {
                 nombre: "Java",
                 nivel: "Intermedio",
-                icono: "/src/components/icons/java.svg"
+                icono: java
             }
         ]
     },
@@ -43,22 +57,22 @@ var habilidades = ref([
             {
                 nombre: "React",
                 nivel: "Intermedio",
-                icono: "/src/components/icons/react.svg"
+                icono: react
             },
             {
                 nombre: "Vue",
                 nivel: "Intermedio",
-                icono: "/src/components/icons/vue.svg"
+                icono: vue
             },
             {
                 nombre: "Bootstrap", 
                 nivel: "Intermedio",
-                icono: "/src/components/icons/bootstrap.svg"
+                icono: bootstrap
             },
             {
                 nombre: "Spring Boot",
                 nivel: "Intermedio",
-                icono: "/src/components/icons/spring.svg"
+                icono: spring
             }
         ]
     },
@@ -68,12 +82,12 @@ var habilidades = ref([
             {
                 nombre: "Git",
                 nivel: "Avanzado",
-                icono: "/src/components/icons/git.svg"
+                icono: git
             },
             {
                 nombre: "Visual Studio Code",
                 nivel: "Avanzado",
-                icono: "/src/components/icons/vsc.svg"
+                icono: vs
             }
         ]
     },
@@ -83,12 +97,12 @@ var habilidades = ref([
             {
                 nombre: "Español",
                 nivel: "Nativo",
-                icono: "/src/components/icons/argentina.svg"
+                icono: español
             },
             {
                 nombre: "Inglés",
                 nivel: "Intermedio",
-                icono: "/src/components/icons/eeuu.png"
+                icono: ingles
             }
         ]
     }

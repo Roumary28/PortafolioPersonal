@@ -1,14 +1,20 @@
 <script setup>
+import pencil from '/src/assets/pencil.svg';
+import lista from '/src/assets/lista.svg';
+import calendar from '/src/assets/calendar.svg';
+import ccv from '/src/assets/cv.svg';
+import libro from '/src/assets/libro.svg';
+
 import { ref } from 'vue';
 
 const titulo ='Analista Funcional';
 const fecha = 'Desde Diciembre 2023 / Mayo 2024';
 const experiencias = ref([
-    {id:1, src:'/src/assets/pencil.svg', parrafo: 'Definir y Analizar los requerimientos del usuario'},
-    {id:2, src:'/src/assets/lista.svg', parrafo: 'Analizar y evaluar rendimiento de los sistemas existentes.'},
-    {id:3, src:'/src/assets/calendar.svg', parrafo: 'Crear planes de cambio basados en los requerimientos analizados.'},
-    {id:4, src:'/src/assets/cv.svg', parrafo: 'Comprobar la funcionalidad del producto final.'},
-    {id:5, src:'/src/assets/libro.svg', parrafo: 'Escribir Manuales de Usuario y Documentacion.'}
+    {id:1, src: pencil, parrafo: 'Definir y Analizar los requerimientos del usuario'},
+    {id:2, src: lista, parrafo: 'Analizar y evaluar rendimiento de los sistemas existentes.'},
+    {id:3, src: calendar, parrafo: 'Crear planes de cambio basados en los requerimientos analizados.'},
+    {id:4, src: ccv, parrafo: 'Comprobar la funcionalidad del producto final.'},
+    {id:5, src: libro, parrafo: 'Escribir Manuales de Usuario y Documentacion.'}
 ])
 </script>
 
