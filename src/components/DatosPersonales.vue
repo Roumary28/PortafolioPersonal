@@ -39,6 +39,7 @@ const photoUrl = fotomia;
 </template>
 
 <style scoped>
+
 h1 {
     font-size: 3.5rem; /* Tamaño aumentado para mayor impacto */
     color: #b23a48; /* Rosa oscuro intenso */
@@ -113,5 +114,8 @@ h3 {
 h4 {
     font-size: 1.1rem;
     color: #b5838d; /* Rosa oscuro suave */
+}
+.datos-personales {
+    margin-top: 10px;
 }
 </style>
